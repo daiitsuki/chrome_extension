@@ -1,0 +1,100 @@
+.search_container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBox {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.iconBox {
+  width: 120px;
+  height: 50px;
+  border: 1px solid black;
+  transition: border 0.3s;
+}
+.iconBox.dark {
+  border: 1px solid white;
+}
+
+.searchForm,
+.iconBox {
+  all: unset;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  width: 500px;
+  height: 50px;
+  text-align: left;
+  padding: 0px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.searchForm {
+  transition: border 0.3s;
+  transition: color 0.3s;
+}
+
+.searchForm.dark {
+  color: white;
+  border: 1px solid white;
+}
+
+.searchIcon {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+}
+
+.searchIconIMG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+
+.searchIcon:hover {
+  transition: 0.15s;
+  transform: scale(1.1);
+}
+
+#iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;
+  padding: 0px 10px;
+}
+
+.searchBtn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  transition: border 0.3s;
+}
+
+.searchBtn.dark {
+  border: 1px solid white;
+}
+
+.searchBtn #searchIMG {
+  transition: filter 0.3s;
+}
+
+.searchBtn #searchIMG.dark {
+  filter: invert(100%);
+}

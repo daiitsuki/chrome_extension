@@ -1,0 +1,88 @@
+.memo_continaer {
+  position: fixed;
+  right: 10px;
+  bottom: 4px;
+}
+
+.memo_box {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.memo_display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.memo_display.none {
+  display: none;
+}
+
+.memo_content_container {
+  width: 380px;
+  height: 430px;
+  background-color: transparent;
+}
+
+.memo_content {
+  display: flex;
+  align-items: center;
+
+  width: 360px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.08);
+  color: rgba(255, 255, 255, 0.901);
+  text-align: left;
+  font-size: 1rem;
+}
+
+.memo_input_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+.inputBtn.memoBtn {
+  margin-left: 5px;
+}
+
+.memo_input {
+  all: unset;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.memoToggleBtn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 25%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.memoToggleBtn:hover {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}

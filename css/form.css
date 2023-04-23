@@ -1,0 +1,122 @@
+.link_modify_container {
+  display: none;
+}
+.link_modify_container.fade_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+  -webkit-animation: fadein 0.3s; /* Safari and Chrome */
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.link_modify_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  transition: color 0.3s;
+  transition: border 0.3s;
+}
+.link_modify_form.dark {
+  color: white;
+  border: 1px solid white;
+}
+
+.link_modify_exit {
+  display: block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 100%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.link_input,
+.name_input {
+  all: unset;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.LMSpan {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+.LMURL,
+.LMName {
+  width: 600px;
+  height: 60px;
+  /* border: 1px solid black; */
+  margin-top: 25px;
+}
+
+.LMURL {
+  margin-top: 25px;
+}
+.link_input:focus,
+.name_input:focus {
+  border: 1px solid rgb(80, 80, 80);
+}
+
+.inputBtn {
+  width: 45px;
+  height: 30px;
+  border-radius: 0%;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+.LMinfo {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: -50px;
+  align-self: center;
+}
+
+#forcedInputBtn {
+  width: 100px;
+  height: 15px;
+  font-size: 8px;
+  border-radius: 2px;
+  margin-left: 3px;
+}
+
+.LMInfoText {
+  display: flex;
+}
+
+.orderBtn {
+  width: 20px;
+}
