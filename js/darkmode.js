@@ -75,7 +75,7 @@ async function toggle() {
 async function init() {
   const btn = document.getElementById("darkToggleBtn");
   const tema = await chromeget("tema");
-  if (tema[0] == null) {
+  if (tema == null) {
     chromeset("tema", "light");
   }
   btn.addEventListener("click", toggle);

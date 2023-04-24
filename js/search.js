@@ -47,16 +47,16 @@ async function defaultEngineSet() {
   const url2 = await chromeget("search2");
   const url3 = await chromeget("search3");
   const url4 = await chromeget("search4");
-  if (url1[0] === null) {
+  if (url1 === null) {
     chromeset("search1", "https://www.naver.com");
   }
-  if (url2[0] === null) {
+  if (url2 === null) {
     chromeset("search2", "https://papago.naver.com");
   }
-  if (url3[0] === null) {
+  if (url3 === null) {
     chromeset("search3", "https://www.youtube.com");
   }
-  if (url4[0] === null) {
+  if (url4 === null) {
     chromeset("search4", "https://namu.wiki");
   }
 }
