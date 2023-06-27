@@ -23,197 +23,141 @@
     <title>새 탭</title>
   </head>
   <body>
-    <div class="darkModeOnOff">
-      <button class="darkToggleBtn" id="darkToggleBtn"></button>
-    </div>
-    <div class="ani_time_container" id="ani_time_container">
-      <button class="ani_toggle_btn" id="ani_toggle_btn">A</button>
-      <div class="ani_time_frame" id="ani_time_frame"></div>
-    </div>
-    <div class="weather_container">
-      <div class="weather_box light">
-        <div class="weather_first_line">
-          <div class="weather_icon" id="weather_icon"></div>
-          <div class="weather_temperature noselect" id="temperature"></div>
-          <div class="weather_location noselect" id="location"></div>
-        </div>
+    <div class="leftSide">
+      <div class="darkModeOnOff">
+        <button class="darkToggleBtn" id="darkToggleBtn"></button>
+      </div>
+      <div class="ani_time_container" id="ani_time_container">
+        <button class="ani_toggle_btn" id="ani_toggle_btn">A</button>
+        <div class="ani_time_frame" id="ani_time_frame"></div>
       </div>
     </div>
-    <div class="time_container noselect">
-      <div class="clockForm">
-        <div class="time light" id="clock">
-          <div class="main">
-            <span class="time-number" id="hour"></span>
-            <span class="time-number dots">:</span>
-            <span class="time-number" id="minute"></span>
-          </div>
-          <div class="sub">
-            <span class="time_date" id="time_date_form"></span>
+    <div class="mainSide">
+      <div class="time_container noselect">
+        <div class="clockForm">
+          <div class="time light" id="clock">
+            <div class="main">
+              <span class="time-number" id="hour"></span>
+              <span class="time-number dots">:</span>
+              <span class="time-number" id="minute"></span>
+            </div>
+            <div class="sub">
+              <span class="time_date" id="time_date_form"></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="search_container">
-      <div class="searchBox">
-        <div class="iconBox light" id="iconBox">
-          <div class="searchIcon" id="searchIcon1"></div>
-          <div class="searchIcon" id="searchIcon2"></div>
-          <div class="searchIcon" id="searchIcon3"></div>
-          <div class="searchIcon" id="searchIcon4"></div>
-        </div>
-        <input
-          type="text"
-          name="searchForm"
-          class="searchForm noselect light"
-          id="searchForm"
-          placeholder="검색어를 입력하세요."
-        />
-        <button class="searchBtn light" id="searchBtn">
-          <img
-            src="./icons/etc/search.jpg"
-            alt=""
-            class="light"
-            id="searchIMG"
-          />
-        </button>
-        <button class="removeBtn" id="removeBtn" style="display: none">
-          remove
-        </button>
-      </div>
-    </div>
-    <div class="icons_container">
-      <div class="icons_box light" id="icons_box"></div>
-    </div>
-    <div class="link_modify_container" id="link_modify_container">
-      <div class="link_modify_form light">
-        <div class="LMURL">
-          <span class="LMSpan">링크 추가/수정/삭제</span>
+      <div class="search_container">
+        <div class="searchBox">
+          <div class="iconBox light" id="iconBox">
+            <div class="searchIcon" id="searchIcon1"></div>
+            <div class="searchIcon" id="searchIcon2"></div>
+            <div class="searchIcon" id="searchIcon3"></div>
+            <div class="searchIcon" id="searchIcon4"></div>
+          </div>
           <input
             type="text"
-            name="link_input"
-            class="link_input noselect"
-            id="link_input"
-            placeholder="URL을 입력하세요."
-            n="0"
+            name="searchForm"
+            class="searchForm noselect light"
+            id="searchForm"
+            placeholder="검색어를 입력하세요."
           />
-          <button class="inputBtn" id="link_input_btn" n="0">입력</button>
-          <button class="inputBtn" id="link_delete_btn" n="0">삭제</button>
-        </div>
-        <div class="LMName">
-          <span class="LMSpan">이름/순서 변경</span>
-          <input
-            type="text"
-            name="name_input"
-            class="name_input noselect"
-            id="name_input"
-            placeholder="사이트 이름을 변경하세요."
-            n="0"
-          />
-          <button class="inputBtn" id="name_input_btn" n="0">입력</button>
-          <button class="inputBtn orderBtn" id="order_up_btn" n="0">▲</button>
-          <button class="inputBtn orderBtn" id="order_down_btn" n="0">▼</button>
-        </div>
-        <div class="LMInfoText" display="flex">
-          <div class="LMinfo" id="link_modify_info" n="0"></div>
-          <button
-            class="forcedInputBtn"
-            id="forcedInputBtn"
-            n="0"
-            style="display: none"
-          >
-            무시하고 입력하기
+          <button class="searchBtn light" id="searchBtn">
+            <img
+              src="./icons/etc/search.jpg"
+              alt=""
+              class="light"
+              id="searchIMG"
+            />
+          </button>
+          <button class="removeBtn" id="removeBtn" style="display: none">
+            remove
           </button>
         </div>
       </div>
-    </div>
-    <div class="memo_continaer">
-      <div class="memo_box">
-        <div class="memo_display none" id="memo_display">
-          <div class="memo_content_container" id="memo_content_container"></div>
-          <div class="memo_input_container">
+      <div class="icons_container">
+        <div class="icons_box light" id="icons_box"></div>
+      </div>
+      <div class="link_modify_container" id="link_modify_container">
+        <div class="link_modify_form light">
+          <div class="LMURL">
+            <span class="LMSpan">링크 추가/수정/삭제</span>
             <input
               type="text"
-              name="memo_input"
-              class="memo_input noselect"
-              id="memo_input"
-              placeholder="메모를 입력하세요."
-              maxlength="50"
+              name="link_input"
+              class="link_input noselect"
+              id="link_input"
+              placeholder="URL을 입력하세요."
               n="0"
             />
-            <button class="inputBtn memoBtn" id="memo_input_btn">입력</button>
+            <button class="inputBtn" id="link_input_btn" n="0">입력</button>
+            <button class="inputBtn" id="link_delete_btn" n="0">삭제</button>
+          </div>
+          <div class="LMName">
+            <span class="LMSpan">이름/순서 변경</span>
+            <input
+              type="text"
+              name="name_input"
+              class="name_input noselect"
+              id="name_input"
+              placeholder="사이트 이름을 변경하세요."
+              n="0"
+            />
+            <button class="inputBtn" id="name_input_btn" n="0">입력</button>
+            <button class="inputBtn orderBtn" id="order_up_btn" n="0">▲</button>
+            <button class="inputBtn orderBtn" id="order_down_btn" n="0">
+              ▼
+            </button>
+          </div>
+          <div class="LMInfoText" display="flex">
+            <div class="LMinfo" id="link_modify_info" n="0"></div>
+            <button
+              class="forcedInputBtn"
+              id="forcedInputBtn"
+              n="0"
+              style="display: none"
+            >
+              무시하고 입력하기
+            </button>
           </div>
         </div>
-        <button class="memoToggleBtn" id="memoToggleBtn"></button>
       </div>
     </div>
-    <!-- <div class="todos_container">
-      <div class="todos_btn_wrapper">
-        <button class="todolist_button noselect" id="todolistBtn">
-          <img
-            src="./icons/etc/check_list.png"
-            alt=""
-            class="todoCheckIMG"
-            id="todolistBtnIMG"
-          />
-        </button>
-      </div>
-      <div class="list_wrapper noselect" id="list_wrapper">
-        <div class="listTitleBar">
-          <div class="listTitle">Check List</div>
+    <div class="rightSide">
+      <div class="weather_container">
+        <div class="weather_box light">
+          <div class="weather_first_line">
+            <div class="weather_icon" id="weather_icon"></div>
+            <div class="weather_temperature noselect" id="temperature"></div>
+            <div class="weather_location noselect" id="location"></div>
+          </div>
         </div>
-        <div class="listContent">
-          <div class="todolist" id="list1" state="default" n="1">
-            <div class="todolistInfo" id="listINFO1" n="1">
-              <div class="todolistDate" id="listD1" n="1"></div>
-              <div
-                class="todolistContents"
-                id="listC1"
-                n="1"
-                style="display: flex"
-              ></div>
-              <textarea
-                class="todolistModify"
-                wrap="hard"
-                cols="20"
-                maxlength="40"
-                rows="2"
-                spellcheck="false"
-                id="listM1"
-                n="1"
-                placeholder="최대 40자까지 입력할 수 있습니다."
-                style="display: none"
-              ></textarea>
-              <div class="todolistState" id="listS1" n="1"></div>
-            </div>
-            <div class="todolistBtns" id="listBtns1" n="1">
-              <div class="todolistClear" id="listCL1" n="1">
-                <img
-                  src="./icons/etc/check1.png"
-                  alt="check"
-                  class="todoMenuBtn"
-                  id="listCL_img1"
-                  n="1"
-                />
-              </div>
-              <div class="todolistDel" id="listDel1" n="1">
-                <img
-                  src="./icons/etc/del1.png"
-                  alt="x"
-                  class="todoMenuBtn"
-                  id="listDel_img1"
-                  n="1"
-                />
-              </div>
+      </div>
+
+      <div class="memo_container">
+        <div class="memo_box">
+          <div class="memo_display none" id="memo_display">
+            <div
+              class="memo_content_container"
+              id="memo_content_container"
+            ></div>
+            <div class="memo_input_container">
+              <input
+                type="text"
+                name="memo_input"
+                class="memo_input noselect"
+                id="memo_input"
+                placeholder="메모를 입력하세요. (BETA)"
+                maxlength="50"
+                n="0"
+              />
+              <button class="inputBtn memoBtn" id="memo_input_btn">입력</button>
             </div>
           </div>
-          <div class="todolist" id="list2" n="2"></div>
-          <div class="todolist" id="list3" n="3"></div>
-          <div class="todolist" id="list4" n="4"></div>
-        </div>
-        <div class="listFooter">
-          <div class="listViewMore">View More</div>
+          <button class="memoToggleBtn" id="memoToggleBtn"></button>
         </div>
       </div>
-    </div> -->
+    </div>
+    <div class="comment"></div>
   </body>
 </html>

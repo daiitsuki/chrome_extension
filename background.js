@@ -49,6 +49,8 @@ function jstoggle() {
 async function txtFile() {
   let text1 = "";
   let text2 = "";
+  let text3 = "";
+
   for (let i = 1; i <= 10; i++) {
     const url = `url${i}`;
     const page = `page${i}`;
@@ -70,7 +72,17 @@ async function txtFile() {
   }
 
   text2 = text2.replace(/,/g, "\n ");
-  const text = text1 + text2;
+
+  for (let i = 1; i <= 10; i++) {
+    const NT_URL_N = `New Tab url${i}`;
+    const NT_TITLE_N = `New Tab title${i}`;
+    const e = await chromeget(NT_URL_N);
+    const f = await chromeget(NT_TITLE_N);
+
+    text3 = text3 + `URL${i}(${f}): ${e}\n\n`;
+  }
+
+  const text = text1 + text2 + text3;
 
   var blob = new Blob([text], { type: "text/plain" });
   objURL = window.URL.createObjectURL(blob);
