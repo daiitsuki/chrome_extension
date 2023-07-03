@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/darkmode.css" />
     <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
     <link rel="stylesheet" href="css/clock.css" />
     <link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="css/icons.css" />
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="css/memo.css" />
     <script type="module" src="js/darkmode.js"></script>
     <script type="module" src="js/weather.js"></script>
+    <script type="module" src="js/calendar.js"></script>
     <script type="module" src="js/clock.js"></script>
     <script type="module" src="js/search.js"></script>
     <script type="module" src="js/form.js"></script>
@@ -133,7 +135,9 @@
           </div>
         </div>
       </div>
-
+      <div class="dDay_container">
+        <div id="dDay"></div>
+      </div>
       <div class="memo_container">
         <div class="memo_box">
           <div class="memo_display none" id="memo_display">

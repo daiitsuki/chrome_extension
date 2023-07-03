@@ -1,0 +1,8 @@
+#dDay {
+  display: flex;
+  justify-content: right;
+  color: white;
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
