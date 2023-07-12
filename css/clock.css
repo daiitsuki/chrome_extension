@@ -1,10 +1,10 @@
 .time_container {
-  width: 100%;
+  width: 800px;
   height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .clockForm {
