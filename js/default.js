@@ -1,5 +1,6 @@
 import { darkmode_init } from "./darkmode.js";
 import { weather_init } from "./weather.js";
+import { calendar_init } from "./calendar.js";
 import { clock_init } from "./clock.js";
 import { search_init } from "./search.js";
 import { link_modify_init } from "./form.js";
@@ -102,6 +103,7 @@ function init() {
   default_init();
   darkmode_init();
   weather_init();
+  calendar_init();
   clock_init();
   search_init();
   icons_show_init();
